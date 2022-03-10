@@ -22,6 +22,7 @@ Check the API at:
     ```due_date``` -> `should be a valid date` <br />
     
     * [http://127.0.0.1:8000/api/v1/courses/evaluation]
+    * EXAMPLE: http://127.0.0.1:8000/api/v1/courses/evaluation?course_duration=2629746&&learning_process=40&&creation_date=2022-03-01&&due_date=2022-04-01
   - v2:
     * [http://127.0.0.1:8000/api/v2/courses/{id}]
     * [http://127.0.0.1:8000/api/v2/courses/{id}/evaluation]
