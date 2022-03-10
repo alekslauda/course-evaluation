@@ -8,7 +8,9 @@ In the project directory, you can run:
 
 ### `composer install`
 
-### php artisan serv
+### `php artisan serv`
+
+### `php artisan test`
 
 Runs the app in the development mode.\
 Check the API at:
