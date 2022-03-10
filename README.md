@@ -15,10 +15,10 @@ Check the API at:
   - v1 (to be reviewed):
   
     `Navigate to the url below and provide the necessary params to perform an evaluation` <br />
-    **`course_duration -> should be integer`
-    ** `learning_process -> should be integer`
-    **`creation_date -> should be a valid date`
-    **`due_date -> should be a valid date`
+    `course_duration -> should be integer` <br />
+    `learning_process -> should be integer` <br />
+    `creation_date -> should be a valid date` <br />
+    `due_date -> should be a valid date` <br />
     
     * [http://127.0.0.1:8000/api/v1/courses/evaluation]
   - v2:
