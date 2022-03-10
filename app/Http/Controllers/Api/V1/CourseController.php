@@ -24,8 +24,8 @@ class CourseController extends Controller
     $validator = Validator::make($request->all(), [
       'course_duration' => 'required|integer',
       'learning_process' => 'required|integer|between:0,100',
-      'creation_date' => 'required|date_format:' . \DateTimeInterface::RFC3339,
-      'due_date' => 'required|date_format:' . \DateTimeInterface::RFC3339
+      'creation_date' => 'required|date',
+      'due_date' => 'required|date'
     ]);
     
     if ($validator->fails()) {

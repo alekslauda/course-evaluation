@@ -63,6 +63,8 @@ class CourseController extends Controller
   }
 
   public function evaluate($id, Request $request) {
-    //code 
+    return response()->json([
+      'data' => 'To be implemented!'
+    ]);
   }
 }

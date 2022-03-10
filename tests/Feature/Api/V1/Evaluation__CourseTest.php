@@ -95,14 +95,15 @@ class Evaluation__CourseTest extends TestCase
       $response = $this->get($this->build_evaluation_url([
         'course_duration' => 2,
         'learning_process' => 22,
-        'creation_date' => '2022-12-12',
+        'creation_date' => 'asdad',
         'due_date' => $test_date
       ]));
       
 
       $json = $this->decode_response($response, 'error');
+
       $this->assertEquals(
-        'The creation date does not match the format ' . \DateTimeInterface::RFC3339 . '.',
+        'The creation date is not a valid date.',
         $json['message']['creation_date'][0]
       );
 
@@ -111,13 +112,13 @@ class Evaluation__CourseTest extends TestCase
         'course_duration' => 2,
         'learning_process' => 22,
         'creation_date' => $test_date,
-        'due_date' => '2022-12-12'
+        'due_date' => 'asdasd'
       ]));
       
 
       $json = $this->decode_response($response, 'error');
       $this->assertEquals(
-        'The due date does not match the format ' . \DateTimeInterface::RFC3339 . '.',
+        'The due date is not a valid date.',
         $json['message']['due_date'][0]
       );
     }
